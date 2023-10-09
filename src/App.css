@@ -1,0 +1,30 @@
+.stars {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-color: black;
+    z-index: -1;
+    position: absolute;
+}
+
+.star {
+    position: absolute;
+    background-color: #8EFF8B;
+    border-radius: 50%;
+    animation: fn1 0.5s infinite;
+}
+
+@keyframes fn1 {
+    0% {
+        opacity: 0.1;
+    }
+    50% {
+        opacity: 1;
+        filter: scaleY(1.22);
+        filter: scaleX(1.22);
+    }
+    100% {
+        opacity: 0;
+    }
+}
