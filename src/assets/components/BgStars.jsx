@@ -25,14 +25,14 @@ const BgStar = () => {
         stars.push(
             <div
                 key={i}
-                className="star bg-white rounded-full absolute"
+                className="star bg-green-500 rounded-full absolute -z-[100]"
                 style={starStyle}
             ></div>
         );
     }
 
     return (
-        <div className="stars w-screen h-screen bg-black absolute overflow-hidden">
+        <div className="fixed top-0 left-0 w-screen h-screen bg-black -z-[100] overflow-hidden">
             {stars}
         </div>
     );

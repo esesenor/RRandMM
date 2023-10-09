@@ -12,11 +12,11 @@ const ResidentList = ({ residents }) => {
   }, [residents]);
 
   return (
-    residents.length === 0  ? 
-    <div className="bg-black w-screen h-auto m-auto">Mundo Vacío</div> 
+    residents.length < 1  ? 
+    <div> Empty Location...</div> 
     :
-    <section className="bg-black">
-      <section className="grid  0 grid-cols-[repeat(auto-fit,_300px)] justify-center gap-6 max-w-[1000px] mx-auto py-10">
+    <section>
+      <section className="grid grid-cols-[repeat(auto-fit,_300px)] justify-center gap-6 max-w-[1000px] mx-auto py-10 z-50">
         {residentsInpage.map((resident) => (
           <ResidentCard key={resident} residentEndpoint={resident} />
         ))}

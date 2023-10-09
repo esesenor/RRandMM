@@ -25,7 +25,7 @@ const ResidentCard = ({ residentEndpoint }) => {
 
   
   return (
-    <article className="border border-[#8EFF8B]" id="Card" key='Card'>
+    <article className="border border-[#8EFF8B] z-50" id="Card" key='Card'>
       <header className="relative">
         <img src={resident?.image} alt="" className={`${colStatus[resident?.status]}`} />
 

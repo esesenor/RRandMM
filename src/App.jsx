@@ -16,7 +16,8 @@ function App() {
     .catch((err) => console.log(err)) 
   },[])
   return (
-    <main className="bg-black text-[#FBFBFB] p-4 m-0 font-['Fira Code']">
+    <main className="text-[#FBFBFB] p-4 m-0 font-['Fira Code']">
+        
         <Location location={location} setLocation={setLocation}/>
         <ResidentList residents={location?.residents ?? []}  />
     </main>

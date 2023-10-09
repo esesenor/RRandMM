@@ -1,6 +1,7 @@
 import { IconVirusSearch } from "@tabler/icons-react";
 import axios from "axios";
 import { getRandomNumber } from "../utils/random";
+import BgStar from "./BgStars";
 
 const Location = ({ location, setLocation }) => {
   const handleSubmit = (e) => {
@@ -24,8 +25,10 @@ const Location = ({ location, setLocation }) => {
   };
 
   return (
-    <section className="bg-black">
-          <header className="flex justify-center mb-20 mb:mb-2">
+    <section>
+      <BgStar />
+      <section className=" z-50">
+        <header className="flex justify-center mb-20 mb:mb-2">
         <img
           className="absolute w-[33%] animate-rotarrr mt-[-10%] bg-transparent sm:w-[40%]]"
           src="./vect1.png"
@@ -67,6 +70,7 @@ const Location = ({ location, setLocation }) => {
           <li className="mb-2 sm:mb-0">Dimension: {location?.dimension}</li>
           <li className="mb-2 sm:mb-0">Population: {location?.residents.length}</li>
         </ul>
+      </section>
       </section>
     </section>
   );
