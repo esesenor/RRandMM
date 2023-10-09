@@ -11,8 +11,8 @@ const ResidentCard = ({ residentEndpoint }) => {
   };
 
   const colStatus = {
-    Alive: "hover:brightness-[1.25] hover:scale-150 hover:rounded-full hover:z-[100]",
-    Dead: "hover:brightness-[0.5]",
+    Alive: "hover:brightness-[1.25] hover:z-[200] hover:scale-150 hover:rounded-full",
+    Dead: "hover:brightness-[0.4]",
     unknown: "hover:brightness-[0.9] hover:scale-[90%]",
   }
   
@@ -25,7 +25,7 @@ const ResidentCard = ({ residentEndpoint }) => {
 
   
   return (
-    <article className="border border-[#8EFF8B] z-50" id="Card" key='Card'>
+    <article className="border border-[#8EFF8B] z-[80]" id="Card" key='Card'>
       <header className="relative">
         <img src={resident?.image} alt="" className={`${colStatus[resident?.status]}`} />
 

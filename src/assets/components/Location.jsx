@@ -43,7 +43,7 @@ const Location = ({ location, setLocation }) => {
       </header>
 
       <div className="mt-3 justify-center mb-16">
-        <form onSubmit={handleSubmit} className="flex justify-center">
+        <form onSubmit={handleSubmit} className="flex justify-center" title="Select a location of the 'Rick and Morty' series with a number between 1 and 126">
           <input
             placeholder="Type a New Location ..."
             name="idLocation"
@@ -52,6 +52,7 @@ const Location = ({ location, setLocation }) => {
           />
           <button
             type="submit"
+            title="Just press Search to bring up a random location"
             className="bg-[#8EFF8B] border border-[#95b994] flex p-1 font-bold items-center text-black
             hover:bg-gradient-to-r hover:from-yellow-300 hover:border-yellow-500 hover:via-red-500 hover:to-[#8EFF8B] hover:text-black`}"
           >
