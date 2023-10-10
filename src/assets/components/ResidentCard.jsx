@@ -29,7 +29,7 @@ const ResidentCard = ({ residentEndpoint }) => {
       <header className="relative">
         <img src={resident?.image} alt="" className={`${colStatus[resident?.status]}`+" z-[100]"} />
 
-        <div className="absolute bottom-4 left-1/2 sca -translate-x-1/2 bg-black/80 text-white px-5 py-1 rounded-md flex items-center gap-2">
+        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-black/80 text-white px-5 py-1 rounded-md flex items-center gap-2">
           <div
             className={`h-3 w-3 ${
               characterStatus[resident?.status]
