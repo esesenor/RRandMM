@@ -1,7 +1,7 @@
 import { IconVirusSearch } from "@tabler/icons-react";
 import axios from "axios";
 import { getRandomNumber } from "../utils/random";
-import BgStar from "./BgStars";
+
 
 const Location = ({ location, setLocation }) => {
   const handleSubmit = (e) => {
@@ -26,7 +26,6 @@ const Location = ({ location, setLocation }) => {
 
   return (
     <section>
-      <BgStar />
       <section className=" z-50">
         <header className="flex justify-center mb-20 mb:mb-2">
         <img

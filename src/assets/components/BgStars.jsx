@@ -19,13 +19,13 @@ const BgStar = () => {
             left: left,
             top: top,
             animationDuration: animationDuration,
-            animationDelay: animationDelay,
+            animationDelay: animationDelay
         };
 
         stars.push(
             <div
                 key={i}
-                className="star bg-green-400 rounded-full absolute -z-[100]"
+                className="star bg-green-300 rounded-full absolute -z-[100]"
                 style={starStyle}
             ></div>
         );
