@@ -11,7 +11,7 @@ const ResidentCard = ({ residentEndpoint }) => {
   };
 
   const colStatus = {
-    Alive: "hover:brightness-[1.25] hover:z-[200] hover:scale-[120] hover:rounded-full",
+    Alive: "hover:brightness-[1.25] hover:z-[200] hover:scale-110 hover:rounded-full",
     Dead: "hover:brightness-[0.4]",
     unknown: "hover:brightness-[0.9] hover:scale-[90%]",
   }
