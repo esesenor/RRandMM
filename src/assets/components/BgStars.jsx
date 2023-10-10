@@ -25,7 +25,7 @@ const BgStar = () => {
         stars.push(
             <div
                 key={i}
-                className="star bg-green-300 rounded-full absolute -z-[100]"
+                className=" bg-[#aae606] rounded-full absolute -z-[100] animate-fn1 shadow-md shadow-yellow-200"
                 style={starStyle}
             ></div>
         );

@@ -26,9 +26,11 @@ const ResidentList = ({ residents }) => {
         {pages.map((page) => (
           <li key={page}>
             <button
-              className={`bg-transparent border-2 border-[#8EFF8B] text-[#8EFF8B] font-bold p-1 rounded-tr-full rounded-br-full shadow-md shadow-[#8EFF8B] w-10 h-10 ${
+              className={`bg-transparent border-2 border-[#8EFF8B] text-[#8EFF8B] font-bold p-1 rounded-tr-full rounded-br-full shadow-md shadow-[#8EFF8B] w-10 h-10 
+              ${
                 page === currentPage && "bg-green-500"
-              } hover:bg-gradient-to-r hover:from-yellow-300 hover:via-red-500 hover:to-[#8EFF8B] hover:text-black`}
+              } 
+              hover:bg-gradient-to-r hover:from-yellow-300 hover:via-red-500 hover:to-[#8EFF8B] hover:text-black`}
               onClick={() => setcurrentPage(page)}
             >
               {page}

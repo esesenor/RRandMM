@@ -10,7 +10,8 @@ export default {
      extend: {
       animation: {
         'flotar': 'flotar 8s infinite linear',
-        'rotarrr': 'rotarrr 16s infinite linear'
+        'rotarrr': 'rotarrr 16s infinite linear',
+        'fn1': 'fn1 1s infinite linear',
       },
       keyframes: {
         'flotar': {
@@ -21,6 +22,17 @@ export default {
         'rotarrr': {
           '0%': { transform: 'rotate(0deg)'},
           '100%': { transform: 'rotate(360deg)'}
+        },
+        'fn1': {
+          '0%': {
+              opacity: 0.1,
+          },
+          '50%': {
+              opacity: 1,
+          },
+          '100%': {
+              opacity: 0,
+          }
         }
       },
       fontFamily: {

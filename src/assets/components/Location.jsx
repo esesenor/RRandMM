@@ -29,7 +29,7 @@ const Location = ({ location, setLocation }) => {
       <section className=" z-50">
         <header className="flex justify-center mb-20 mb:mb-2">
         <img
-          className="absolute w-[33%] animate-rotarrr mt-[-10%] bg-transparent sm:w-[40%]]"
+          className="absolute w-[33%] animate-rotarrr mt-[-11%] bg-transparent sm:w-[40%]]"
           src="./vect1.png"
           alt=""
         />
