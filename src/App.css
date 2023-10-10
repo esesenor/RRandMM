@@ -1,17 +1,4 @@
-.stars {
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-    background-color: black;
-    z-index: -1;
-    position: absolute;
-}
-
 .star {
-    position: absolute;
-    background-color: #8EFF8B;
-    border-radius: 50%;
     animation: fn1 0.5s infinite;
 }
 

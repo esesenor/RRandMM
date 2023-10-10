@@ -16,7 +16,6 @@ export default {
         'flotar': {
           '0%, 100%': { transform: 'translateY(0)' },
           '50%': { transform: 'translateY(-20px)' },
-          '70%': { transform: 'brightness(1.5)'}
         },
         'rotarrr': {
           '0%': { transform: 'rotate(0deg)'},
