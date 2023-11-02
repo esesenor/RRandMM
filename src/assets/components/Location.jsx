@@ -14,7 +14,7 @@ const Location = ({ location, setLocation }) => {
       .get(`https://rickandmortyapi.com/api/location/${getRandomNumber(126)}`)
       .then(({ data }) => setLocation(data))
       .catch((err) => console.log(err));
-    }else{flex
+    }else{
       axios
       .get(`https://rickandmortyapi.com/api/location/${idLocation}`)
       .then(({ data }) => setLocation(data))
@@ -27,9 +27,9 @@ const Location = ({ location, setLocation }) => {
   return (
     <section>
       <section className=" z-50">
-      <header className="flex justify-center mb-20 md:mb-2">
+      <header className="flex justify-center mb-16">
         <img
-          className="absolute w-[33%] animate-rotarrr mt-[-11%] bg-transparent sm:w-[40%]] mb-2"
+          className="absolute w-[33%] animate-rotarrr mt-[-11%] bg-transparent ] mb-2"
           src="./vect1.png"
           alt=""
         />
@@ -41,7 +41,7 @@ const Location = ({ location, setLocation }) => {
         />
       </header>
 
-      <div className="mt-3 justify-center mb-16">
+      <div className="mt-12 z-50 justify-center mb-8">
         <form onSubmit={handleSubmit} className="flex justify-center" title="Select a location of the 'Rick and Morty' series with a number between 1 and 126">
           <input
             placeholder="Type a New Location ..."
