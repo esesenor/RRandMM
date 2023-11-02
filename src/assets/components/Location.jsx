@@ -33,13 +33,23 @@ const Location = ({ location, setLocation }) => {
           src="./vect1.png"
           alt=""
         />
-
         <img
           className="w-[65%] m-auto animate-flotar mt-5 sm:w-[60%]"
           src="./rick1.png"
           alt=""
         />
       </header>
+
+      <section className="border border-[#8EFF8B] p-3 mr-1 mb-6">
+        <h3 className="text-center text-[#8EFF8B] text-xl font-semibold font-mono mb-2 break-words">
+          ¡Welcome to {location?.name}!
+        </h3>
+        <ul className="flex flex-col sm:flex-row sm:justify-between mx-4 sm:mx-20 text-[#938686] text-lg font-semibold font-mono">
+          <li className="mb-2 sm:mb-0">Type: {location?.type}</li>
+          <li className="mb-2 sm:mb-0">Dimension: {location?.dimension}</li>
+          <li className="mb-2 sm:mb-0">Population: {location?.residents.length}</li>
+        </ul>
+      </section>
 
       <div className="mt-12 z-50 justify-center mb-8">
         <form onSubmit={handleSubmit} className="flex justify-center" title="Select a location of the 'Rick and Morty' series with a number between 1 and 126">
@@ -62,17 +72,6 @@ const Location = ({ location, setLocation }) => {
         </form>
       </div>
 
-      <section className="border border-[#8EFF8B] p-3 mr-1 mb-6">
-        <h3 className="text-center text-[#8EFF8B] text-xl font-semibold font-mono mb-2 break-words">
-          ¡Welcome to {location?.name}!
-        </h3>
-
-        <ul className="flex flex-col sm:flex-row sm:justify-between mx-4 sm:mx-20 text-[#938686] text-lg font-semibold font-mono">
-          <li className="mb-2 sm:mb-0">Type: {location?.type}</li>
-          <li className="mb-2 sm:mb-0">Dimension: {location?.dimension}</li>
-          <li className="mb-2 sm:mb-0">Population: {location?.residents.length}</li>
-        </ul>
-      </section>
       </section>
     </section>
   );
