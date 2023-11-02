@@ -12,8 +12,8 @@ const ResidentCard = ({ residentEndpoint }) => {
 
   const colStatus = {
     Alive: "hover:brightness-[1.25] hover:z-[200] hover:scale-125 hover:rounded-md",
-    Dead: "hover:brightness-[0.4]",
-    unknown: "hover:brightness-[0.9] hover:scale-[90%]",
+    Dead: "hover:brightness-[0.1]",
+    unknown: "hover:scale-[90%]",
   }
   
   useEffect(() => {
@@ -27,7 +27,7 @@ const ResidentCard = ({ residentEndpoint }) => {
   return (
     <article className="border border-[#8EFF8B]">
       <header className="relative">
-        <img src={resident?.image} alt="" className={'z-[200]'+`${colStatus[resident?.status]}`+" z-[100]"} />
+        <img src={resident?.image} alt="" className={`${colStatus[resident?.status]}`+"absolute"} />
 
         <div className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-black/80 text-white px-5 py-1 rounded-md flex items-center gap-2">
           <div

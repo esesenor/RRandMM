@@ -14,7 +14,7 @@ const Location = ({ location, setLocation }) => {
       .get(`https://rickandmortyapi.com/api/location/${getRandomNumber(126)}`)
       .then(({ data }) => setLocation(data))
       .catch((err) => console.log(err));
-    }else{
+    }else{flex
       axios
       .get(`https://rickandmortyapi.com/api/location/${idLocation}`)
       .then(({ data }) => setLocation(data))
@@ -27,7 +27,7 @@ const Location = ({ location, setLocation }) => {
   return (
     <section>
       <section className=" z-50">
-        <header className="flex justify-center mb-20 mb:mb-2">
+      <header className="flex justify-center mb-20 md:mb-2">
         <img
           className="absolute w-[33%] animate-rotarrr mt-[-11%] bg-transparent sm:w-[40%]]"
           src="./vect1.png"
@@ -53,7 +53,9 @@ const Location = ({ location, setLocation }) => {
             type="submit"
             title="Just press Search to bring up a random location"
             className="bg-[#8EFF8B] border border-[#95b994] flex p-1 font-bold items-center text-black
-            hover:bg-gradient-to-r hover:from-yellow-300 hover:border-yellow-500 hover:via-red-500 hover:to-[#8EFF8B] hover:text-black`}"
+            hover:bg-gradient-to-r hover:from-yellow-300 hover:border-yellow-500 hover:via-red-500 
+            hover:to-[#8EFF8B] 
+            hover:text-black`}"
           >
             Search <IconVirusSearch size={19} />
           </button>

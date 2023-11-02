@@ -19,7 +19,7 @@ function App() {
   return (
     <main className="text-[#FBFBFB] p-4 m-0 font-['Fira Code']">
         <BgStar />
-        <Location location={location} setLocation={setLocation}/>
+        <Location location={location} setLocation={setLocation} />
         <ResidentList residents={location?.residents ?? []}  />
     </main>
   )

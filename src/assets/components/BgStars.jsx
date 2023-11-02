@@ -32,7 +32,7 @@ const BgStar = () => {
     }
 
     return (
-        <div className="fixed top-0 left-0 w-screen h-screen bg-black -z-[100] overflow-hidden">
+        <div className="fixed top-0 left-0 w-full h-full bg-black -z-[100] overflow-hidden">
             {stars}
         </div>
     );
